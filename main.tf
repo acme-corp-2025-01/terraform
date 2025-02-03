@@ -45,7 +45,7 @@ locals {
 module "fastapi-app-cluster" {
     source = "./modules/fastapi-app"
 
-    deploy_services = false
+    # deploy_services = false
 
     app_registry = "${local.aws_account_id}.dkr.ecr.${local.aws_region}.amazonaws.com"
 
